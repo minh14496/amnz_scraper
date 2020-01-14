@@ -29,11 +29,12 @@ def check_price():
 #google for it then using the app pw generate and put it in here
 def send_mail():
     server = smtplib.SMTP('smtp.gmail.com', 587) #for the number and smtp name Google smtp for gmail
+    #these are for contacting the server and gmail
     server.ehlo()
     server.starttls()
     server.ehlo()
     
-    server.login('minh14496@gmail.com','binqxicmucxsntqx')
+    server.login('minh14496@gmail.com','pw is here') #email and generated pw
     subject = 'Price go down'
     body = title +'\n'+ 'Check the amazon link https://www.amazon.com/Samsung-Enhanced-Tracking-Analysis-Coaching/dp/B07VKQ54V1/ref=sr_1_2?keywords=galaxy%2Bwatch%2Bactive%2B2%2Blte&qid=1578964458&sr=8-2&th=1'
     msg = f"Subject:{subject}\n\n{body}"
